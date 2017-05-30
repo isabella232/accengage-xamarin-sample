@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{BCEB9040-BBB0-4936-8120-662B02F51A8A}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Xamarin_Accengage_iOS_sample_demo</RootNamespace>
+    <AssemblyName>Xamarin_Accengage_iOS_sample_demo</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <IOSDebuggerPort>60396</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>false</MtouchProfiling>
+    <MtouchFloat32>false</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision></CodesignProvision>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Accengage.iOS">
+      <HintPath>..\packages\Xamarin.Accengage.1.1\lib\xamarinios\Accengage.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\header.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\header.imageset\header.png" />
+    <ImageAsset Include="Assets.xcassets\header.imageset\header%402x.png" />
+    <ImageAsset Include="Assets.xcassets\header.imageset\header%403x.png" />
+    <ImageAsset Include="Assets.xcassets\business.imageset\business.jpg" />
+    <ImageAsset Include="Assets.xcassets\business.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\media.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\mostViewed.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\technology.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\media.imageset\media.jpg" />
+    <ImageAsset Include="Assets.xcassets\mostViewed.imageset\mostViewed.jpg" />
+    <ImageAsset Include="Assets.xcassets\technology.imageset\technology.jpg" />
+    <ImageAsset Include="Assets.xcassets\art.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\art.imageset\art.jpg" />
+    <ImageAsset Include="Assets.xcassets\like.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\like.imageset\like.png" />
+    <ImageAsset Include="Assets.xcassets\like.imageset\like%402x.png" />
+    <ImageAsset Include="Assets.xcassets\like.imageset\like%403x.png" />
+    <ImageAsset Include="Assets.xcassets\settings.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\settings.imageset\settings.png" />
+    <ImageAsset Include="Assets.xcassets\settings.imageset\settings%402x.png" />
+    <ImageAsset Include="Assets.xcassets\settings.imageset\settings%403x.png" />
+    <ImageAsset Include="Assets.xcassets\arrows-down.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\arrows-down.imageset\arrows-down.png" />
+    <ImageAsset Include="Assets.xcassets\arrows-down.imageset\arrows-down%402x.png" />
+    <ImageAsset Include="Assets.xcassets\arrows-down.imageset\arrows-down%403x.png" />
+    <ImageAsset Include="Assets.xcassets\home.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\home.imageset\home.png" />
+    <ImageAsset Include="Assets.xcassets\home.imageset\home%402x.png" />
+    <ImageAsset Include="Assets.xcassets\home.imageset\home%403x.png" />
+    <ImageAsset Include="Assets.xcassets\inbox.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\inbox.imageset\inbox.png" />
+    <ImageAsset Include="Assets.xcassets\inbox.imageset\inbox%402x.png" />
+    <ImageAsset Include="Assets.xcassets\inbox.imageset\inbox%403x.png" />
+    <ImageAsset Include="Assets.xcassets\edit.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\edit.imageset\edit.png" />
+    <ImageAsset Include="Assets.xcassets\edit.imageset\edit%402x.png" />
+    <ImageAsset Include="Assets.xcassets\edit.imageset\edit%403x.png" />
+    <ImageAsset Include="Assets.xcassets\save.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\save.imageset\save.png" />
+    <ImageAsset Include="Assets.xcassets\save.imageset\save%402x.png" />
+    <ImageAsset Include="Assets.xcassets\save.imageset\save%403x.png" />
+    <ImageAsset Include="Assets.xcassets\arrows-left.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\arrows-left.imageset\arrows-left.png" />
+    <ImageAsset Include="Assets.xcassets\arrows-left.imageset\arrows-left%402x.png" />
+    <ImageAsset Include="Assets.xcassets\arrows-left.imageset\arrows-left%403x.png" />
+    <ImageAsset Include="Assets.xcassets\arrows-up.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\arrows-up.imageset\arrows-up.png" />
+    <ImageAsset Include="Assets.xcassets\arrows-up.imageset\arrows-up%402x.png" />
+    <ImageAsset Include="Assets.xcassets\arrows-up.imageset\arrows-up%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\header.imageset\" />
+    <Folder Include="Assets.xcassets\business.imageset\" />
+    <Folder Include="Assets.xcassets\media.imageset\" />
+    <Folder Include="Assets.xcassets\mostViewed.imageset\" />
+    <Folder Include="Assets.xcassets\technology.imageset\" />
+    <Folder Include="Assets.xcassets\art.imageset\" />
+    <Folder Include="Assets.xcassets\like.imageset\" />
+    <Folder Include="Assets.xcassets\settings.imageset\" />
+    <Folder Include="Vendors\" />
+    <Folder Include="Assets.xcassets\arrows-down.imageset\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Assets.xcassets\home.imageset\" />
+    <Folder Include="Assets.xcassets\inbox.imageset\" />
+    <Folder Include="Assets.xcassets\edit.imageset\" />
+    <Folder Include="Assets.xcassets\save.imageset\" />
+    <Folder Include="Assets.xcassets\arrows-left.imageset\" />
+    <Folder Include="Controllers\Inbox\" />
+    <Folder Include="Assets.xcassets\arrows-up.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Controllers\MainViewController.cs" />
+    <Compile Include="Controllers\MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ProductsViewContoller.cs" />
+    <Compile Include="Controllers\ProductsViewContoller.designer.cs">
+      <DependentUpon>ProductsViewContoller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SettingsViewController.cs" />
+    <Compile Include="Controllers\SettingsViewController.designer.cs">
+      <DependentUpon>SettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SettingsCell.cs" />
+    <Compile Include="Controllers\SettingsCell.designer.cs">
+      <DependentUpon>SettingsCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SampleHelpers.cs" />
+    <Compile Include="Controllers\Inbox\InboxViewController.cs" />
+    <Compile Include="Controllers\Inbox\InboxViewController.designer.cs">
+      <DependentUpon>InboxViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Inbox\InboxCell.cs" />
+    <Compile Include="Controllers\Inbox\InboxCell.designer.cs">
+      <DependentUpon>InboxCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\InboxTools.cs" />
+    <Compile Include="Controllers\Inbox\InboxDetailsViewController.cs" />
+    <Compile Include="Controllers\Inbox\InboxDetailsViewController.designer.cs">
+      <DependentUpon>InboxDetailsViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="AccengageConfig.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCLAlertView\SCLAlertView.csproj">
+      <Project>{F7ADA5F5-B8E4-4C21-A18C-3C7AE9FE5735}</Project>
+      <Name>SCLAlertView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NotificationServiceSample\NotificationServiceSample.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{99EB116E-4AF9-4D3E-A15C-8A57718D6BE8}</Project>
+      <Name>NotificationServiceSample</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="..\SCLAlertView\libSCLAlertViewLib.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

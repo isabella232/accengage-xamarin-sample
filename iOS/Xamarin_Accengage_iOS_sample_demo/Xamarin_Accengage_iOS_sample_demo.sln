@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin_Accengage_iOS_sample_demo", "Xamarin_Accengage_iOS_sample_demo.csproj", "{BCEB9040-BBB0-4936-8120-662B02F51A8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCEB9040-BBB0-4936-8120-662B02F51A8A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{BCEB9040-BBB0-4936-8120-662B02F51A8A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{BCEB9040-BBB0-4936-8120-662B02F51A8A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{BCEB9040-BBB0-4936-8120-662B02F51A8A}.Release|iPhone.Build.0 = Release|iPhone
+		{BCEB9040-BBB0-4936-8120-662B02F51A8A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{BCEB9040-BBB0-4936-8120-662B02F51A8A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{BCEB9040-BBB0-4936-8120-662B02F51A8A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{BCEB9040-BBB0-4936-8120-662B02F51A8A}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
