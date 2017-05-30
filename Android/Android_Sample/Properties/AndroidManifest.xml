@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.accengage.xamarin.sample" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="16" />
+  <permission android:name="${applicationId}.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+  <permission android:name="${applicationId}.provider.A4S_READ_DATABASE" android:protectionLevel="signature" />
+  <permission android:name="${applicationId}.provider.A4S_WRITE_DATABASE" android:protectionLevel="signature" />
+  <permission android:name="${applicationId}.permission.A4S_SEND" android:protectionLevel="signature" />
+  <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <uses-permission android:name="${applicationId}.permission.A4S_SEND" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.INTERNET" />
+	<application android:label="Android_Sample">
+    <service android:name="com.ad4screen.sdk.A4SService" android:label="A4S Service" android:process=":A4SService">
+      <meta-data android:name="com.ad4screen.partnerid" android:value="your-partner-id" />
+      <meta-data android:name="com.ad4screen.privatekey" android:value="your-private-key" />
+      <meta-data android:name="com.ad4screen.logging" android:value="true" />
+    </service>
+    <provider android:authorities="${applicationId}.ad4screen.provider" android:readPermission="${applicationId}.provider.A4S_READ_DATABASE" android:writePermission="${applicationId}.provider.A4S_WRITE_DATABASE" android:name="com.ad4screen.sdk.provider.A4SProvider" android:process=":A4SService" />
+    <receiver android:name="com.ad4screen.sdk.NotificationActionsReceiver" android:process=":A4SService">
+      <intent-filter>
+        <action android:name="com.ad4screen.sdk.notification.CLICK" />
+        <action android:name="com.ad4screen.sdk.notification.action.CLICK" />
+        <category android:name="${applicationId}" />
+      </intent-filter>
+    </receiver>
+    <receiver android:name="com.ad4screen.sdk.GCMHandler" android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="${applicationId}" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
