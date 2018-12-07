@@ -9,7 +9,7 @@ namespace Xamarin_Accengage_iOS_sample_demo
 {
 	public partial class InboxDetailsViewController : UIViewController
 	{
-		public AccenageInboxMessage message;
+		public AccengageInboxMessage message;
 		public AccengageInboxMessageContent content;
 
 		public InboxDetailsViewController(IntPtr handle) : base(handle) {}

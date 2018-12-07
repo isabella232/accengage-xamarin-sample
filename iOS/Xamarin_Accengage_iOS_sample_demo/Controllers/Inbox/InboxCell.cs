@@ -13,7 +13,7 @@ namespace Xamarin_Accengage_iOS_sample_demo
         {
 		}
 
-		public void setMessage(AccenageInboxMessage msg)
+		public void setMessage(AccengageInboxMessage msg)
 		{
 			Subject.Text = msg.Title;
 			Content.Text = msg.Text;
